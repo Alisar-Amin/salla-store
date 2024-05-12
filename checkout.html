@@ -63,32 +63,123 @@
     </header>
     <main>
         <section id="chechout">
-            <h1>Check Out</h1>
+            <h1 class="chechout-title">Check Out</h1>
             <form action="">
-                <label for="first-name">First Name*</label>
-                <input type="text" id="first-name" placeholder="First Name">
+                <div class="chechout-grid">
 
-                <label for="last-name">Last Name*</label>
-                <input type="text" id="last-name" placeholder="Last Name">
+                    <div class="field">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" id="first-name" placeholder="First Name">
+                    </div>
+                    <div class="field">
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" id="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="field">
+                        <label for="country">Country / Region*</label>
+                        <input type="text" id="country" placeholder="Country / Region">
+                    </div>
 
-                <label for="country">Country / Region*</label>
-                <input type="text" id="country" placeholder="Country / Region">
+                    <div class="field">
+                        <label for="Ccmpany">Company Name</label>
+                        <input type="text" id="Ccmpany" placeholder="Company (optional)">
+                    </div>
 
-                <label for="Ccmpany">Company Name</label>
-                <input type="text" id="Ccmpany" placeholder="Company (optional)">
+                    <div class="field">
+                        <label for="street">Street Address*</label>
+                        <input type="text" id="street" placeholder="House number and street name">
+                    </div>
 
-                <label for="street">Street Address*</label>
-                <input type="text" id="street" placeholder="House number and street name">
+                    <div class="field">
+                        <label for="apartment">Apt, suite, unit</label>
+                        <input type="text" id="apartment" placeholder="apartment, suite, unit, etc. (optional)">
+                    </div>
 
-                <label for="apartment">Apt, suite, unit</label>
-                <input type="text" id="apartment" placeholder="apartment, suite, unit, etc. (optional)">
+                    <div class="field">
+                        <div>
+                            <label for="city">City*</label>
+                            <input type="text" id="city" placeholder="Town / City">
+                        </div>
+                        <div>
+                            <label for="state">State*</label>
+                            <div class="state-group">
+                                <input type="text" id="state" placeholder="State">
+                                <div class="icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="code">Postal Code*</label>
+                            <input type="password" id="code" placeholder="Postal Code">
+                        </div>
+                    </div>
 
-                <label for="city">City*</label>
-                <input type="text" id="city" placeholder="Town / City">
+                    <div class="field">
+                        <label for="phone">Phone*</label>
+                        <input type="tel" id="phone" placeholder="Phone">
+                    </div>
 
-                <label for="state">State*</label>
-                <input type="text" id="state" placeholder="State">
+                </div>
+                <input type="submit" value="Continue to delivery">
+                <div class="save-group">
+                    <input type="checkbox" id="save">
+                    <label for="save">Save my information for a faster checkout</label>
+                </div>
             </form>
+        </section>
+        
+        <section id="payment">
+            <h2>Payment Method</h2>
+            <p class="payment-parg">All transactions are secure and encrypted.</p>
+            <div class="radio-group">
+                <div class="payment-category">
+                    <input type="radio" id="credit-card" name="payment-method">
+                    <div>
+                        <label for="credit-card">Credit Card</label>
+                        <p>We accept all major credit cards.</p>
+                    </div>
+                </div>
+                <div class="credit-card-method">
+                    <div class="credit-card-content">
+                        <div><img src="./assets/img/googlePay.png" alt=""></div>
+                    </div>
+                    <div class="credit-card-content">
+                        <div><img src="./assets/img/footer-img4.png" alt=""></div>
+                    </div>
+                    <div class="credit-card-content">
+                        <div><img src="./assets/img/footer-img2.png" alt=""></div>
+                    </div>
+                    <div class="credit-card-content">
+                        <div><img src="./assets/img/paypass.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="credit-card-info">
+                    <input type="text" placeholder="Card number">
+                    <input type="text" placeholder="Name of card">
+                    <input type="text" placeholder="Expiration date (MM/YY)">
+                    <div class="code-group">
+                        <input type="text" placeholder="Security Code">
+                        <div class="icon"><i class="fa-regular fa-eye"></i></div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="payment-category">
+                    <input type="radio" id="cash" name="payment-method">
+                    <div>
+                        <label for="cash">Cash on delivery</label>
+                        <p>Pay with cash upon delivery.</p>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="payment-category">
+                    <input type="radio" id="paypol" name="payment-method">
+                    <label for="paypol">Paypol</label>
+                </div>
+                <input type="submit" value="Pay Now">
+            </div>
         </section>
     </main>
     <footer>
