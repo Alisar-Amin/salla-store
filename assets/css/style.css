@@ -1731,6 +1731,12 @@ hr{
         padding: 40px 30px;
     }
 }
+@media screen  and (max-width: 576px){
+    #cart .order-details .code-add{
+        margin-top: 8px;
+    }
+}
+
 /*                                     End Cart Page                                */
 
 /*                                     Start All Products Page                                */
@@ -2015,5 +2021,6 @@ hr{
         display: none;
     }
 }
+
 
 /*                                     End All Products Page                                */
