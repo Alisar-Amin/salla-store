@@ -1726,15 +1726,27 @@ hr{
     align-items: center;
     margin-top: 16px;
 }
+@media screen  and (max-width: 1010px){
+    #cart .cart-content .cart-product{
+        position: relative;
+    }
+    #cart .cart-content .cart-product .delete{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+}
 @media screen  and (max-width: 768px){
     #cart{
         padding: 40px 30px;
     }
+
 }
 @media screen  and (max-width: 576px){
     #cart .order-details .code-add{
         margin-top: 8px;
     }
+
 }
 
 /*                                     End Cart Page                                */
